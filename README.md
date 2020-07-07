@@ -1,2 +1,0 @@
-# arch-config
-No description.
