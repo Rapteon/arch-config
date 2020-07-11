@@ -1,0 +1,36 @@
+[Error  - 15:10:15.713] Getting token failed: Error: The name org.freedesktop.secrets was not provided by any .service files
+[Error  - 15:10:45.746] Getting token failed: Error: The name org.freedesktop.secrets was not provided by any .service files
+[Error  - 15:11:15.771] Getting token failed: Error: The name org.freedesktop.secrets was not provided by any .service files
+[Error  - 15:11:45.779] Getting token failed: Error: The name org.freedesktop.secrets was not provided by any .service files
+[Error  - 15:12:15.805] Getting token failed: Error: The name org.freedesktop.secrets was not provided by any .service files
+[Error  - 15:12:45.829] Getting token failed: Error: The name org.freedesktop.secrets was not provided by any .service files
+[Error  - 15:13:15.850] Getting token failed: Error: The name org.freedesktop.secrets was not provided by any .service files
+[Error  - 15:13:45.875] Getting token failed: Error: The name org.freedesktop.secrets was not provided by any .service files
+[Error  - 15:14:15.890] Getting token failed: Error: The name org.freedesktop.secrets was not provided by any .service files
+[Error  - 15:14:45.918] Getting token failed: Error: The name org.freedesktop.secrets was not provided by any .service files
+[Error  - 15:15:15.953] Getting token failed: Error: The name org.freedesktop.secrets was not provided by any .service files
+[Error  - 15:15:45.960] Getting token failed: Error: The name org.freedesktop.secrets was not provided by any .service files
+[Info  - 15:16:09.940] Logging in...
+[Error  - 15:16:15.984] Getting token failed: Error: The name org.freedesktop.secrets was not provided by any .service files
+[Error  - 15:16:46.12] Getting token failed: Error: The name org.freedesktop.secrets was not provided by any .service files
+[Error  - 15:17:16.30] Getting token failed: Error: The name org.freedesktop.secrets was not provided by any .service files
+[Error  - 15:17:46.50] Getting token failed: Error: The name org.freedesktop.secrets was not provided by any .service files
+[Error  - 15:18:16.75] Getting token failed: Error: The name org.freedesktop.secrets was not provided by any .service files
+[Error  - 15:18:46.105] Getting token failed: Error: The name org.freedesktop.secrets was not provided by any .service files
+[Info  - 15:18:48.733] Logging in...
+[Error  - 15:19:16.119] Getting token failed: Error: The name org.freedesktop.secrets was not provided by any .service files
+[Error  - 15:19:46.159] Getting token failed: Error: The name org.freedesktop.secrets was not provided by any .service files
+[Error  - 15:20:16.185] Getting token failed: Error: The name org.freedesktop.secrets was not provided by any .service files
+[Error  - 15:20:46.219] Getting token failed: Error: The name org.freedesktop.secrets was not provided by any .service files
+[Info  - 15:20:51.619] Treating input as token
+[Info  - 15:20:51.622] Getting account info...
+[Info  - 15:20:51.624] Getting account info...
+[Error  - 15:21:01.681] getaddrinfo EAI_AGAIN api.github.com
+[Error  - 15:21:01.683] Error: network error
+[Error  - 15:21:01.692] getaddrinfo EAI_AGAIN api.github.com
+[Error  - 15:21:01.694] Error: network error
+[Error  - 15:21:16.243] Getting token failed: Error: The name org.freedesktop.secrets was not provided by any .service files
+[Error  - 15:21:46.266] Getting token failed: Error: The name org.freedesktop.secrets was not provided by any .service files
+[Error  - 15:22:16.287] Getting token failed: Error: The name org.freedesktop.secrets was not provided by any .service files
+[Error  - 15:22:46.310] Getting token failed: Error: The name org.freedesktop.secrets was not provided by any .service files
+[Error  - 15:23:16.336] Getting token failed: Error: The name org.freedesktop.secrets was not provided by any .service files

@@ -1,0 +1,2 @@
+# The 30-touchpad.conf file must be placed in /etc/X11/xorg.conf.d
+# The wpa_supplicant.conf file must be placed in /etc/wpa_supplicant

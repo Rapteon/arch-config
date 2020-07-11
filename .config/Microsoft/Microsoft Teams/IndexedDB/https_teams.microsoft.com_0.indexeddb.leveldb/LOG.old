@@ -1,0 +1,28 @@
+2020/07/10-10:02:45.448 29068 Reusing MANIFEST /home/suraj/.config/Microsoft/Microsoft Teams/IndexedDB/https_teams.microsoft.com_0.indexeddb.leveldb/MANIFEST-000001
+2020/07/10-10:02:45.448 29068 Recovering log #45
+2020/07/10-10:02:45.449 29068 Reusing old log /home/suraj/.config/Microsoft/Microsoft Teams/IndexedDB/https_teams.microsoft.com_0.indexeddb.leveldb/000045.log 
+2020/07/10-10:42:22.602 30531 Level-0 table #51: started
+2020/07/10-10:42:22.616 30531 Level-0 table #51: 1277500 bytes OK
+2020/07/10-10:42:22.619 30531 Delete type=0 #45
+2020/07/10-10:53:11.112 30531 Compacting 1@1 + 2@2 files
+2020/07/10-10:53:11.147 30531 Generated table #52@1: 6772 keys, 2157510 bytes
+2020/07/10-10:53:11.168 30531 Generated table #53@1: 6533 keys, 1051775 bytes
+2020/07/10-10:53:11.168 30531 Compacted 1@1 + 2@2 files => 3209285 bytes
+2020/07/10-10:53:11.170 30531 compacted to: files[ 0 0 2 0 0 0 0 ]
+2020/07/10-10:53:11.170 30531 Delete type=2 #51
+2020/07/10-10:53:11.170 30531 Delete type=2 #47
+2020/07/10-10:53:11.170 30531 Delete type=2 #48
+2020/07/10-12:02:18.866 30531 Level-0 table #55: started
+2020/07/10-12:02:18.887 30531 Level-0 table #55: 993669 bytes OK
+2020/07/10-12:02:18.889 30531 Delete type=0 #50
+2020/07/10-12:07:10.960 30531 Compacting 1@1 + 2@2 files
+2020/07/10-12:07:10.996 30531 Generated table #56@1: 6840 keys, 2158115 bytes
+2020/07/10-12:07:11.017 30531 Generated table #57@1: 6638 keys, 1081149 bytes
+2020/07/10-12:07:11.017 30531 Compacted 1@1 + 2@2 files => 3239264 bytes
+2020/07/10-12:07:11.018 30531 compacted to: files[ 0 0 2 0 0 0 0 ]
+2020/07/10-12:07:11.018 30531 Delete type=2 #53
+2020/07/10-12:07:11.019 30531 Delete type=2 #52
+2020/07/10-12:07:11.019 30531 Delete type=2 #55
+2020/07/10-14:57:19.064 30531 Level-0 table #59: started
+2020/07/10-14:57:19.108 30531 Level-0 table #59: 1248380 bytes OK
+2020/07/10-14:57:19.110 30531 Delete type=0 #54

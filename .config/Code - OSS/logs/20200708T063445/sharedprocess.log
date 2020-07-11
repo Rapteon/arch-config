@@ -1,0 +1,4 @@
+[2020-07-08 06:34:49.029] [sharedprocess] [info] main {"machineId":"627a14d29f9ac926ab8d854f920e2c3ebbe4f9323a0bfb20f4971c02ec9b6068","windowId":2}
+[2020-07-08 06:35:29.037] [sharedprocess] [info] Starting to clean up unused language packs.
+[2020-07-08 06:36:52.771] [sharedprocess] [info] Uninstalling extension: cesium.gltf-vscode
+[2020-07-08 06:36:52.782] [sharedprocess] [info] Successfully uninstalled extension: cesium.gltf-vscode

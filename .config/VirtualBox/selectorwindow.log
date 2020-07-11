@@ -1,0 +1,18 @@
+00:00:00.352199 VirtualBox GUI VM Selector Window 6.1.10 r138449 linux.amd64 (Jun  8 2020 08:33:44) release log
+00:00:00.352206 Log opened 2020-07-07T11:18:25.241171000Z
+00:00:00.352208 Build Type: release
+00:00:00.352215 OS Product: Linux
+00:00:00.352219 OS Release: 5.7.7-arch1-1
+00:00:00.352223 OS Version: #1 SMP PREEMPT Wed, 01 Jul 2020 14:53:16 +0000
+00:00:00.352272 DMI Product Name: X556UQK
+00:00:00.352296 DMI Product Version: 1.0       
+00:00:00.352308 Firmware type: UEFI
+00:00:00.353641 Secure Boot: Disabled
+00:00:00.353768 Host RAM: 7844MB (7.6GB) total, 5091MB (4.9GB) available
+00:00:00.353778 Executable: /usr/lib/virtualbox/VirtualBox
+00:00:00.353780 Process ID: 18220
+00:00:00.353782 Package type: LINUX_64BITS_GENERIC (OSE)
+00:00:00.353861 Qt version: 5.15.0
+00:00:00.378227 GUI: UIMediumEnumerator: Medium-enumeration started...
+00:00:00.843363 GUI: UIDesktopWidgetWatchdog::sltHandleHostScreenAvailableGeometryCalculated: Screen 0 work area is actually resized to: 0x0 x 1600x878
+00:00:00.855535 GUI: UIMediumEnumerator: Medium-enumeration finished!

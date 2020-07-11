@@ -1,0 +1,7 @@
+[Added Associations]
+application/pdf=qpdfview.desktop;
+video/mp4=mpv.desktop;
+application/epub+zip=qpdfview.desktop;
+
+[Default Applications]
+x-scheme-handler/msteams=teams.desktop
