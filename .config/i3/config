@@ -318,4 +318,4 @@ exec --no-startup-id lxqt-policykit-agent &
 exec_always --no-startup-id $HOME/.config/polybar/launch.sh
 
 #Starting compositor
-exec --no-startup-id picom --menu-opacity=0.9 --fade-delta=2 --inactive-opacity 0.9 
+exec --no-startup-id picom --menu-opacity=0.7 --fade-delta=2 --inactive-opacity 0.9 --detect-rounded-corners 
