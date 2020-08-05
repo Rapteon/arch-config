@@ -9,12 +9,12 @@ set $mod Mod4
 #My Variables
 
 #Colors
-set $bg-color 	         #cde0ec
-set $inactive-bg-color   #000000
-set $text-color          #000000
-set $inactive-text-color #ccd6d7
-set $urgent-bg-color     #f7af9d
-set $indicator-color     #b7476f
+set $bg-color 	         #0554F2
+set $inactive-bg-color   #03258C
+set $text-color          #FFFFFF
+set $inactive-text-color #AAAAAA
+set $urgent-bg-color     #D90404 
+set $indicator-color     #F90A72
 
 #Lock Screen BgColor
 set $lockscreen-bg-color #000000
@@ -35,7 +35,7 @@ client.urgent           $urgent-bg-color    $urgent-bg-color   $text-color      
 
 # This font is widely installed, provides lots of unicode glyphs, right-to-left
 # text rendering and scalability on retina/hidpi displays (thanks to pango).
-font pango:DejaVu Sans Mono 10
+font pango:DejaVu Sans Mono 11
 
 # The combination of xss-lock, nm-applet and pactl is a popular choice, so
 # they are included here as an example. Modify as you see fit.
@@ -122,16 +122,16 @@ bindsym $mod+c focus child
 
 # Define names for default workspaces for which we configure key bindings later on.
 # We use variables to avoid repeating the names in multiple places.
-set $ws1 "1:Hya"
-set $ws2 "2:Vir"
-set $ws3 "3:UMa"
-set $ws4 "4:Cet"
-set $ws5 "5:Her"
-set $ws6 "6:Eri"
-set $ws7 "7:Peg"
-set $ws8 "8:Dra"
-set $ws9 "9:Cen"
-set $ws10 "10:Aqr"
+set $ws1 "1"
+set $ws2 "2"
+set $ws3 "3"
+set $ws4 "4"
+set $ws5 "5"
+set $ws6 "6"
+set $ws7 "7"
+set $ws8 "8"
+set $ws9 "9"
+set $ws10 "10"
 
 # switch to workspace
 bindsym $mod+1 workspace number $ws1
@@ -201,27 +201,27 @@ bindsym $mod+r mode "resize"
 
 # Start i3bar to display a workspace bar (plus the system information i3status
 # finds out, if available)
-bar {
-       status_command i3status
+#bar {
+#        status_command i3status
 #        status_command i3blocks
-        position bottom
+#        position bottom
         #My Custom Settings
 
         #Custom colors and bar position
 
-	font pango:DejaVu Sans Mono 10
-        colors {
-		background #00000
-		separator $urgent-bg-color
+#	font pango:DejaVu Sans Mono 10
+#        colors {
+#		background #021F59
+#		separator $urgent-bg-color
         #                          border             background         text
-		focused_workspace  $bg-color          $bg-color          $text-color
-		inactive_workspace $inactive-bg-color $inactive-bg-color $inactive-text-color
-		urgent_workspace   $urgent-bg-color   $urgent-bg-color   $text-color
-	}
-        strip_workspace_numbers yes
-        binding_mode_indicator yes
-        separator_symbol "•"
-}
+#		focused_workspace  $bg-color          $bg-color          $text-color
+#		inactive_workspace $inactive-bg-color $inactive-bg-color $inactive-text-color
+#		urgent_workspace   $urgent-bg-color   $urgent-bg-color   $text-color
+#	}
+#        strip_workspace_numbers yes
+#        binding_mode_indicator yes
+#        separator_symbol "•"
+#}
 
 
 ##My
@@ -281,6 +281,8 @@ assign[class="Pcmanfm"] $ws2
 #Open Code-OSS in $ws4
 assign[class="code-oss"] $ws4
 
+#Open MS-Teams in $ws6
+assign[class="Microsoft Teams - Preview"] $ws6
 #Open xpad in floating mode
 for_window[class="xpad"] floating enable
 
@@ -288,7 +290,7 @@ for_window[class="xpad"] floating enable
 exec --no-startup-id /home/suraj/.screenlayout/resolution.sh
 
 #Setting wallpaper using nitrogen
-exec --no-startup-id xwallpaper --focus Wallpapers/wallpaper2.jpg
+exec --no-startup-id xwallpaper --focus Wallpapers/wallpaper3.jpg
 #exec --no-startup-id nitrogen --restore
 
 #Display a welcome message (Hello, $USER)
@@ -298,7 +300,7 @@ exec --no-startup-id xwallpaper --focus Wallpapers/wallpaper2.jpg
 exec --no-startup-id xset r rate 200 30
 
 #Hiding borders adjacent to screen edges
-hide_edge_borders smart
+hide_edge_borders both
 
 #Starting volumeicon
 exec --no-startup-id volumeicon &
@@ -306,14 +308,14 @@ exec --no-startup-id volumeicon &
 #Starting redshift
 exec --no-startup-id redshift-gtk &
 
-#Starting xpad
-exec --no-startup-id xpad &
-
 #Setting brightness to 50%
 exec --no-startup-id xbacklight -set 50% 
 
 #Starting polkit authenticator
 exec --no-startup-id lxqt-policykit-agent &
 
+#Start polybar
+exec_always --no-startup-id $HOME/.config/polybar/launch.sh
+
 #Starting compositor
-exec --no-startup-id picom -d
+exec --no-startup-id picom --menu-opacity=0.9 --fade-delta=2 --inactive-opacity 0.9 

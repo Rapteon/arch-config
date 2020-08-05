@@ -1,5 +1,0 @@
-[2020-07-08 06:34:47.078] [renderer1] [error] Error: Unable to read file '/tmp/mozilla_suraj0/A2FF3A36AAA56654109064AB19802F8B0D70FC30.asc' (Error: Unable to resolve non-existing file '/tmp/mozilla_suraj0/A2FF3A36AAA56654109064AB19802F8B0D70FC30.asc')
-    at Object.t.createErrorWithActions (file:///usr/lib/code/out/vs/workbench/workbench.desktop.main.js:53:257)
-    at e.handleSetInputError (file:///usr/lib/code/out/vs/workbench/workbench.desktop.main.js:5636:601)
-    at e.handleSetInputError (file:///usr/lib/code/out/vs/workbench/workbench.desktop.main.js:5639:428)
-    at e.setInput (file:///usr/lib/code/out/vs/workbench/workbench.desktop.main.js:5636:317)
