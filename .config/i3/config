@@ -305,7 +305,7 @@ exec --no-startup-id xwallpaper --focus Wallpapers/wallpaper3.jpg
 exec --no-startup-id xset r rate 200 30
 
 #Hiding borders adjacent to screen edges
-hide_edge_borders smart
+hide_edge_borders none
 
 #Starting xpad on startup
 exec --no-startup-id xpad &
