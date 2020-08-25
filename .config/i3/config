@@ -292,8 +292,8 @@ for_window[class="xpad"] floating enable
 exec --no-startup-id /home/suraj/.screenlayout/resolution.sh
 
 #Setting wallpaper using nitrogen
-exec --no-startup-id xwallpaper --focus Wallpapers/wallpaper3.jpg
-#exec --no-startup-id nitrogen --restore
+#exec --no-startup-id xwallpaper --focus Wallpapers/wallpaper3.jpg
+exec --no-startup-id nitrogen --restore
 
 #Display a welcome message (Hello, $USER)
 #exec --no-startup-id rofi -e 'Hello, '$USER''
