@@ -1,0 +1,5 @@
+#Remove this comment before placing this file in /usr/share/dbus-1/services
+
+[D-BUS Service]
+Name=org.freedesktop.Notifications
+Exec=/usr/lib/notification-daemon-1.0/notification-daemon
