@@ -1,0 +1,12 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhistcnt =3
+let g:netrw_dirhist_3='/etc'
+let g:netrw_dirhist_2='/home/jarus/.config/inkscape'
+let g:netrw_dirhist_1='/home/jarus/.config'
+let g:netrw_dirhist_0='/run/media/jarus/WinToUSB/Users/snara/Documents/blog/TechProdezza/styles'
+let g:netrw_dirhist_9='/run/media/jarus/WinToUSB/Users/snara/Documents/blog/TechProdezza'
+let g:netrw_dirhist_8='/home/jarus/Software/i3-skyBlue-config'
+let g:netrw_dirhist_7='/home/jarus/Software/arch-config'
+let g:netrw_dirhist_6='/home/jarus'
+let g:netrw_dirhist_5='/home/jarus/.newsboat'
+let g:netrw_dirhist_4='/home/jarus/Documents/c-programming-examples'
