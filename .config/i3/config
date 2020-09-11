@@ -10,12 +10,16 @@ set $mod Mod4
 #My Variables
 
 #Colors
-set $bg-color 	         #cde0ec
+set $bg-color 	         #0001FF
+#cde0ec
 set $inactive-bg-color   #000000
-set $text-color          #000000
+set $text-color          #ffffff
+#000000
 set $inactive-text-color #ccd6d7
-set $urgent-bg-color     #f7af9d
-set $indicator-color     #b7476f
+set $urgent-bg-color     #FF2519
+#f7af9d
+set $indicator-color     #0001FF
+#b7476f
 
 #Lock Screen BgColor
 set $lockscreen-bg-color #000000
@@ -36,7 +40,7 @@ font pango:DejaVu Sans Mono 11
 
 # xss-lock grabs a logind suspend inhibit lock and will use i3lock to lock the
 # screen before suspend. Use loginctl lock-session to lock your screen.
-exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --force-clock --timecolor=ffffffff --datecolor=ffffffff --veriftext="..." --noinputtext="___" --wrongtext=" ! " --color=000000ee --blur=20 --pass-screen-keys --insidecolor=778899ff --insidevercolor=ccd6d7ff --ringcolor=cde0ecff --keyhlcolor=b7476fff
+exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --force-clock --timecolor=ff2519ff --datecolor=ff2519ff --veriftext="..." --noinputtext="___" --wrongtext=" ! " --color=000000aa --blur=20 --pass-screen-keys --insidecolor=000000ff --insidevercolor=ccd6d7ff --ringcolor=0001ffff --keyhlcolor=ff2519ff
 
 
 # NetworkManager is the most popular way to manage wireless networks on Linux,
@@ -165,15 +169,15 @@ mode "resize" {
         # Pressing right will grow the window’s width.
         # Pressing up will shrink the window’s height.
         # Pressing down will grow the window’s height.
-        bindsym j resize shrink width 10 px or 10 ppt
+        bindsym h resize shrink width 10 px or 10 ppt
+        bindsym j resize shrink height 10 px or 10 ppt
         bindsym k resize grow height 10 px or 10 ppt
-        bindsym l resize shrink height 10 px or 10 ppt
-        bindsym semicolon resize grow width 10 px or 10 ppt
+        bindsym l resize grow width 10 px or 10 ppt
 
         # same bindings, but for the arrow keys
         bindsym Left resize shrink width 10 px or 10 ppt
-        bindsym Down resize grow height 10 px or 10 ppt
-        bindsym Up resize shrink height 10 px or 10 ppt
+        bindsym Down resize shrink height 10 px or 10 ppt
+        bindsym Up resize grow height 10 px or 10 ppt
         bindsym Right resize grow width 10 px or 10 ppt
 
         # back to normal: Enter or Escape or $mod+r
@@ -227,7 +231,7 @@ bar {
 
 
 #Lock i3 using i3lock-color
-bindsym $mod+Shift+x exec --no-startup-id i3lock --force-clock --timecolor=ffffffff --datecolor=ffffffff --veriftext="..." --noinputtext="___" --wrongtext=" ! " --color=000000aa --blur=20 --pass-screen-keys --insidecolor=778899ff --insidevercolor=ccd6d7ff --ringcolor=cde0ecff --keyhlcolor=b7476fff
+bindsym $mod+Shift+x exec --no-startup-id i3lock --force-clock --timecolor=ff2519ff --datecolor=ff2519ff --veriftext="..." --noinputtext="___" --wrongtext=" ! " --color=000000aa --blur=20 --pass-screen-keys --insidecolor=000000ff --insidevercolor=ccd6d7ff --ringcolor=0001ffff --keyhlcolor=ff2519ff
 
 #Brightness Controls
 bindsym XF86MonBrightnessDown exec --no-startup-id xbacklight -dec 10
@@ -326,3 +330,6 @@ for_window[class="xpad"] floating enable
 ############## Other Stuff ################
 #Setting brightness to 50%
 exec --no-startup-id xbacklight -set 50%
+
+#Open skippy-xd (task-swticher)
+bindsym $mod+Tab exec --no-startup-id skippy-xd &
