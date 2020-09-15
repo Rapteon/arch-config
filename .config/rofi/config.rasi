@@ -6,7 +6,6 @@
  * Rofi version: 1.5.4
  **/
 * {
-    red:                         rgba ( 220, 50, 47, 100 % );
     selected-active-foreground:  var(whiteText);
     lightfg:                     rgba ( 45, 49, 66, 100 % );
     separatorcolor:              var(foreground);
@@ -35,14 +34,14 @@
     alternate-urgent-foreground: var(red);
     selected-normal-background:  var(lightbg);/**Changing the focused text color.**/
     darkerBlue:			 rgba(39, 56, 214, 100 %);
-    font:                        "DejaVu Sans 12";
+    font:                        "DejaVu Sans 14";
     whiteText:			 rgba(0, 0, 0, 100 %);
 }
 window {
-    padding:          5;
+    padding:          0;
     background-color: var(background);
-    border:           2;
-    border-radius:    12px;
+    border:           0;
+    border-radius:    10px;
     fullscreen:	      false;
     transparency:     "screenshot";
     width:            30%;
@@ -50,14 +49,14 @@ window {
 mainbox {
     padding: 10;
     border:  0;
-    border-radius: 10px;
+    border-radius: 0px;
 }
 message {
     padding:      2px 0px 0px ;
     border-color: var(separatorcolor);
     border:       2px dash 0px 0px ;
     width:        30%;
-    font:         "monospace bold 10";
+    font:         "monospace bold 14";
 }
 textbox {
     text-color: var(foreground);
