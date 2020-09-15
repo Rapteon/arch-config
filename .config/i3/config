@@ -42,7 +42,6 @@ font pango:DejaVu Sans Mono 11
 # screen before suspend. Use loginctl lock-session to lock your screen.
 exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --force-clock --timecolor=ff2519ff --datecolor=ff2519ff --veriftext="..." --noinputtext="___" --wrongtext=" ! " --color=000000aa --blur=20 --pass-screen-keys --insidecolor=000000ff --insidevercolor=ccd6d7ff --ringcolor=0001ffff --keyhlcolor=ff2519ff
 
-
 # NetworkManager is the most popular way to manage wireless networks on Linux,
 # and nm-applet is a desktop environment-independent system tray GUI for it.
 exec --no-startup-id nm-applet
@@ -208,7 +207,7 @@ bar {
         #My Custom Settings
 
         #Custom colors and bar position
-        position bottom
+        position top
 	      font pango:DejaVu Sans Mono 11
         colors {
 		background #00000
@@ -333,3 +332,6 @@ exec --no-startup-id xbacklight -set 50%
 
 #Open skippy-xd (task-swticher)
 bindsym $mod+Tab exec --no-startup-id skippy-xd &
+
+#Setting DPI of display
+exec --no-startup-id xrandr --output eDP1 --dpi 110
