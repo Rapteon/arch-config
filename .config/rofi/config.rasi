@@ -34,7 +34,7 @@
     alternate-urgent-foreground: var(red);
     selected-normal-background:  var(lightbg);/**Changing the focused text color.**/
     darkerBlue:			 rgba(39, 56, 214, 100 %);
-    font:                        "DejaVu Sans 14";
+    font:                        "CMU Typewriter Text Bold 14";
     whiteText:			 rgba(0, 0, 0, 100 %);
 }
 window {
