@@ -272,7 +272,7 @@ bindsym --border button2 floating toggle
 #exec_always rofi -e 'Hello, '$USER''
 
 #Starting picom compositor
-exec --no-startup-id picom --fade-delta=3 --menu-opacity=0.8 --fading --inactive-opacity=0.8 --inactive-dim=0.4
+exec --no-startup-id picom --fade-delta=3 --menu-opacity=0.9 --fading --inactive-opacity=0.8 --inactive-dim=0.4
 
 #Screenshot(stored in home folder)
 bindsym --release Print exec --no-startup-id scrot -sb
