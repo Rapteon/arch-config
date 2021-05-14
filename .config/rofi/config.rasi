@@ -34,16 +34,16 @@
     alternate-urgent-foreground: var(red);
     selected-normal-background:  var(lightbg);/**Changing the focused text color.**/
     darkerBlue:			 rgba(39, 56, 214, 100 %);
-    font:                        "CMU Typewriter Text Bold 14";
+    font:                        "Noto Sans 14";
     whiteText:			 rgba(0, 0, 0, 100 %);
 }
 window {
     padding:          0;
     background-color: var(background);
     border:           0;
-    border-radius:    10px;
+    border-radius:    0px;
     fullscreen:	      false;
-    transparency:     "screenshot";
+    transparency:     "real";
     width:            30%;
 }
 mainbox {
