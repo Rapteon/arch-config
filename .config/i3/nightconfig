@@ -14,14 +14,14 @@
 set $mod Mod4
 
 # general colors
-set $window-focused-bg #79ACD9
+set $window-focused-bg #B3DAF2
 set $window-focused-fg #F2F2F2
 set $window-unfocused-bg #00010D
 set $window-unfocused-fg #45718C
-set $window-focused-inactive-bg #45718C
+set $window-focused-inactive-bg #0D3140
 set $window-focused-inactive-fg #B3DAF2
 set $window-urgent-bg #3E5159
-set $sibling-window-indicator #F2522E
+set $sibling-window-indicator #D99A80
 set $indicator-color #e4edf2
 
 # lockscreen colors
@@ -29,8 +29,8 @@ set $lockscreen-bg-color #000000
 
 # bar colors
 set $bar-bg-color #0D3140
-set $bar-active-workspace-bg #F2522E
-set $bar-active-workspace-fg #F2F2F2
+set $bar-active-workspace-bg #79ACD9
+set $bar-active-workspace-fg #00010d
 set $bar-inactive-workspace-bg #0D3140
 set $bar-inactive-workspace-fg #F2F2F2
 set $bar-urgent-workspace-bg #E4EDF2
@@ -284,10 +284,6 @@ assign [class="code-oss"] $ws4
 #Setting DPI of Display
 exec_always --no-startup-id xrandr --dpi 110
 
-# Staring picom/xcompmgr(compositor)
-#exec --no-startup-id picom -D 3 --backend glx
-exec --no-startup-id xcompmgr -c -C -t-5 -l-5 -r4.2 -o.55
-
 #Enabling Numlock
 exec --no-startup-id numlockx
 
@@ -324,7 +320,7 @@ mode "search" {
 }
 
 # Setting wallpaper using feh
-exec_always --no-startup-id feh --bg-max /home/nemo/Pictures/day-wallpaper.jpg
+exec_always --no-startup-id feh --bg-max /home/nemo/Pictures/night-wallpaper.jpg
 
 # Starting workrave
 exec --no-startup-id workrave
