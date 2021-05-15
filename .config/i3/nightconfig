@@ -35,7 +35,7 @@ set $bar-inactive-workspace-bg #0D3140
 set $bar-inactive-workspace-fg #F2F2F2
 set $bar-urgent-workspace-bg #E4EDF2
 set $bar-urgent-workspace-fg #0D3140
-set $bar-separator-color #F2522E
+set $bar-separator-color #D99A80
 
 # fonts
 set $title-bar-font pango:Cousine Regular 10
