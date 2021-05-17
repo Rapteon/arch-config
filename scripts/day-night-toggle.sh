@@ -2,8 +2,9 @@
 
 hour=$(date +%H)
 
-if [ $hour -ge 19 -a $hour -le 7 ]
+if [ $hour -ge 19 -o $hour -le 7 ]
 then
+	echo "Night"
 	# Changing i3 config
 	cp ~/.config/i3/nightconfig ~/.config/i3/config
 
@@ -13,6 +14,7 @@ then
 	# Changing kitty config
 	cp ~/.config/kitty/night-kitty.conf ~/.config/kitty/kitty.conf
 else
+	echo "Day"
 	# Changing i3 config
 	cp ~/.config/i3/dayconfig ~/.config/i3/config
 
