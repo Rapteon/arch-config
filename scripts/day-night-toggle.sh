@@ -2,7 +2,7 @@
 
 hour=$(date +%H)
 
-if [ $hour -ge 19 -o $hour -le 7 ]
+if [ $hour -ge 19 -o $hour -lt 7 ]
 then
 	echo "Night"
 	# Changing i3 config
