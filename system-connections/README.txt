@@ -1,3 +1,3 @@
-Place this directory in /etc/NetworkManager/
-If another directory of the same name exists, then copy the contents
-of this directory there.
+DO NOT place this directory in /etc/NetworkManager/
+Refer to the last few lines in the line containing something about ip6
+privacy, and add these lines to existing files in /etc/NetworkManager/system-connections
