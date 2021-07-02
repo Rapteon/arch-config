@@ -1,0 +1,402 @@
+# Should you change your keyboard layout some time, delete
+# this file and re-run i3-config-wizard(1).
+
+# i3 config file (v4)
+#
+# Please see https://i3wm.org/docs/userguide.html for a complete reference!
+
+#--------------------------------
+# General Customization
+#--------------------------------
+
+# Mod4 = Windows key, Mod1 = Alt key.
+# initializing the variable 'mod' with value 'Mod4'
+set $mod Mod4
+
+# general colors
+set $window-focused-bg #F28705
+set $window-focused-fg #0e0e0e
+set $window-unfocused-bg #00010D
+set $window-unfocused-fg #C6C5D9
+set $window-focused-inactive-bg #324FA6
+set $window-focused-inactive-fg #B3DAF2
+set $window-urgent-bg #3E5159
+set $sibling-window-indicator #D99A80
+set $sibling-window-indicator #F2522E
+set $indicator-color #e4edf2
+
+# lockscreen colors
+set $lockscreen-bg-color #000000
+
+# bar colors
+set $bar-bg-color #1B1B1B
+set $bar-active-workspace-bg #F2522E
+set $bar-active-workspace-fg #00010d
+set $bar-inactive-workspace-bg #1B1B1B
+set $bar-inactive-workspace-fg #F2F2F2
+set $bar-urgent-workspace-bg #E4EDF2
+set $bar-urgent-workspace-fg #1B1B1B
+set $bar-separator-color #F2522E
+
+# fonts
+set $title-bar-font pango:Cousine Regular 10
+set $bar-font pango:Cousine Regular 12
+
+# titlebar font
+font $title-bar-font
+
+#--------------------------------
+# Window Elements
+#--------------------------------
+
+# colors
+#                       border				background		    text			indicator
+client.focused          $window-focused-bg		$window-focused-bg          $window-focused-fg          $sibling-window-indicator
+client.focused_inactive $window-focused-inactive-bg	$window-focused-inactive-bg $window-focused-inactive-fg $sibling-window-indicator
+client.unfocused        $window-unfocused-bg		$window-unfocused-bg        $window-unfocused-fg	$sibling-window-indicator
+client.urgent           $window-urgent-bg		$window-urgent-bg	    $window-urgent-fg          	$indicator-color
+
+# gaps between screen borders and window//i3gap
+gaps inner 10
+
+# disable gaps in some situations (e.g. single app on screen)
+smart_gaps on
+
+# activate smart-borders //i3gap
+smart_borders on
+
+# change border-width(i3gap)
+for_window [class=".*"] border pixel 10
+
+# popup during fullscreen
+popup_during_fullscreen smart
+
+#--------------------------------
+# Window Management
+#--------------------------------
+
+# kill focused window
+bindsym $mod+q kill
+
+# change focus
+bindsym $mod+h focus left
+bindsym $mod+j focus down
+bindsym $mod+k focus up
+bindsym $mod+l focus right
+
+# alternatively, you can use the cursor keys:
+bindsym $mod+Left focus left
+bindsym $mod+Down focus down
+bindsym $mod+Up focus up
+bindsym $mod+Right focus right
+
+# move focused window
+bindsym $mod+Shift+h move left
+bindsym $mod+Shift+j move down
+bindsym $mod+Shift+k move up
+bindsym $mod+Shift+l move right
+
+# alternatively, you can use the cursor keys:
+bindsym $mod+Shift+Left move left
+bindsym $mod+Shift+Down move down
+bindsym $mod+Shift+Up move up
+bindsym $mod+Shift+Right move right
+
+# split in horizontal orientation
+bindsym $mod+z split h
+
+# split in vertical orientation
+bindsym $mod+v split v
+
+# change container layout (stacked, tabbed, toggle split)
+bindsym $mod+s layout stacking
+bindsym $mod+t layout tabbed
+bindsym $mod+e layout toggle split
+
+# enter fullscreen mode for the focused container
+bindsym $mod+f fullscreen toggle
+
+# focus the parent container
+bindsym $mod+p focus parent
+
+# focus the child container
+bindsym $mod+c focus child
+
+# use Mouse+$mod to drag floating windows to their wanted position
+floating_modifier $mod
+
+# toggle tiling / floating
+bindsym $mod+Shift+space floating toggle
+
+# change focus between tiling / floating windows
+bindsym $mod+Shift+f focus mode_toggle
+
+# resize window (you can also use the mouse for that)
+bindsym $mod+r mode "resize"
+
+mode "resize" {
+        # These bindings trigger as soon as you enter the resize mode
+
+        # Pressing left will shrink the window’s width.
+        # Pressing right will grow the window’s width.
+        # Pressing up will shrink the window’s height.
+        # Pressing down will grow the window’s height.
+        bindsym h resize shrink width 10 px or 10 ppt
+        bindsym j resize grow height 10 px or 10 ppt
+        bindsym k resize shrink height 10 px or 10 ppt
+        bindsym l resize grow width 10 px or 10 ppt
+
+        # same bindings, but for the arrow keys
+        bindsym Left resize shrink width 10 px or 10 ppt
+        bindsym Down resize grow height 10 px or 10 ppt
+        bindsym Up resize shrink height 10 px or 10 ppt
+        bindsym Right resize grow width 10 px or 10 ppt
+
+        # back to normal: Enter or Escape or $mod+r
+        bindsym Return mode "default"
+        bindsym Escape mode "default"
+        bindsym $mod+r mode "default"
+}
+
+#--------------------------------
+# Scratchpad
+#--------------------------------
+
+# scratchpad is a special workspace where you can hide windows when not in use.
+# a window can be removed from scratchpad by converting it into tiling mode.
+
+# to move a window to the scratchpad
+bindsym  $mod+shift+s move scratchpad
+# show windows in scratchpad
+bindsym $mod+shift+v scratchpad show
+
+#--------------------------------
+# Workspace Names
+#--------------------------------
+
+# workspace names defined as variables
+# symbols(mayan numerals) have been used instead of names
+set $ws1 "1:1"
+set $ws2 "2:2"
+set $ws3 "3:3"
+set $ws4 "4:4"
+set $ws5 "5:5"
+set $ws6 "6:6"
+set $ws7 "7:7"
+set $ws8 "8:8"
+set $ws9 "9:9"
+set $ws10 "10:10"
+
+# switch to workspace
+bindsym $mod+1 workspace number $ws1
+bindsym $mod+2 workspace number $ws2
+bindsym $mod+3 workspace number $ws3
+bindsym $mod+4 workspace number $ws4
+bindsym $mod+5 workspace number $ws5
+bindsym $mod+6 workspace number $ws6
+bindsym $mod+7 workspace number $ws7
+bindsym $mod+8 workspace number $ws8
+bindsym $mod+9 workspace number $ws9
+bindsym $mod+0 workspace number $ws10
+
+# move focused container to workspace
+bindsym $mod+Shift+1 move container to workspace number $ws1
+bindsym $mod+Shift+2 move container to workspace number $ws2
+bindsym $mod+Shift+3 move container to workspace number $ws3
+bindsym $mod+Shift+4 move container to workspace number $ws4
+bindsym $mod+Shift+5 move container to workspace number $ws5
+bindsym $mod+Shift+6 move container to workspace number $ws6
+bindsym $mod+Shift+7 move container to workspace number $ws7
+bindsym $mod+Shift+8 move container to workspace number $ws8
+bindsym $mod+Shift+9 move container to workspace number $ws9
+bindsym $mod+Shift+0 move container to workspace number $ws10
+
+# auto-switch to last workspace on selecting the current one
+workspace_auto_back_and_forth yes
+
+#--------------------------------
+# Update Config
+#--------------------------------
+
+# reload the configuration file
+bindsym $mod+Shift+c reload
+# restart i3 inplace (preserves your layout/session, can be used to upgrade i3)
+bindsym $mod+Shift+r restart
+
+#--------------------------------
+# Status Bar Config
+#--------------------------------
+
+bar {
+	# choose the status bar command to run
+        status_command i3status
+	#status_command i3blocks
+
+	# position of the bar can be top/bottom
+        position bottom
+
+	# font used in the bar. used with i3blocks/i3status
+	font $bar-font
+
+	# width of workspace indicator
+	workspace_min_width 50px
+
+	# bar colors
+        colors {
+		background $bar-bg-color
+		separator $bar-separator-color
+#					border					background			text
+		focused_workspace  $bar-active-workspace-bg            $bar-active-workspace-bg          $bar-active-workspace-fg
+		inactive_workspace $bar-inactive-workspace-bg	       $bar-inactive-workspace-bg	 $bar-inactive-workspace-fg
+		urgent_workspace   $bar-urgent-workspace-bg	       $bar-urgent-workspace-bg		 $bar-urgent-workspace-fg
+	}
+
+	# strip number from workspace indicator
+        strip_workspace_numbers yes
+
+	# show binding mode indicators, such as resize
+        binding_mode_indicator yes
+
+	# symbol used to separate different utilities on status bar
+        separator_symbol "•"
+}
+
+
+#--------------------------------
+# Assign Workspaces
+#--------------------------------
+
+#Open browsers in $ws1
+assign [class="firefox"] $ws1
+assign [class="Brave-browser"] $ws1
+
+#Opens new terminal windows in $ws3
+assign [class="kitty"] $ws3
+
+#Opens file manager in $ws2
+assign [class="Pcmanfm"] $ws2
+
+#Open VLC in $ws6
+assign [class="vlc"] $ws6
+
+#Open VSCode in $ws4
+assign [class="code-oss"] $ws4
+
+#--------------------------------
+# Startup Programs
+#--------------------------------
+
+#Setting DPI of Display
+exec_always --no-startup-id xrandr --dpi 110
+
+#Enabling Numlock
+exec --no-startup-id numlockx
+
+#Enabling sxhkd keyboard daemon
+exec --no-startup-id sxhkd
+
+# Starting lxqt-policykit-agent
+exec --no-startup-id lxqt-policykit-agent > /dev/null
+
+# Start dunst notification server
+exec --no-startup-id dunst
+
+# Starting screenlock program
+#exec --no-startup-id xss-lock --transfer-sleep-lock -- i3lock --force-clock --timecolor=ffffffff --datecolor=ffffffff --veriftext="..." --noinputtext="___" --wrongtext=" ! " --color=000000aa --blur=20 --pass-screen-keys --insidecolor=778899ff --insidevercolor=ccd6d7ff --ringcolor=cde0ecff --keyhlcolor=b7476fff
+exec --no-startup-id xss-lock --transfer-sleep-lock -n /usr/lib/xsecurelock/dimmer -l -- xsecurelock
+
+# Start volumeicon
+exec --no-startup-id volumeicon
+
+# Start redshift
+exec --no-startup-id redshift -l 18.31:73.51
+
+# Starting NetworkManager applet
+exec --no-startup-id nm-applet
+
+# Starting dmenu/rofi
+#bindsym $mod+space exec --no-startup-id dmenu_run -nb LightSteelBlue1 -sb Grey -nf Black -l 4
+bindsym $mod+space mode "search"
+mode "search" {
+	bindsym a exec --no-startup-id rofi -modi "drun" -show "drun" -show-icons -no-normal-window
+	bindsym f exec --no-startup-id rofi -modi "file-browser" -show "file-browser" -show-icons -no-normal-window
+	bindsym r exec --no-startup-id rofi -modi "run" -show "run" -show-icons -no-normal-window
+	bindsym Escape mode "default"
+	bindsym Return mode "default"
+        bindsym $mod+space mode "default"
+}
+
+# Setting wallpaper using feh
+exec_always --no-startup-id feh --bg-max /home/sol/Pictures/day-wallpaper.jpg
+
+# Starting workrave
+exec --no-startup-id workrave
+
+# Start xpad note-taking application
+exec --no-startup-id xpad
+
+# Set timer for screensaver. xsecurelock is enabled in place of a screensaver.
+exec --no-startup-id xset s 300 5
+
+#--------------------------------
+# Session Management
+#--------------------------------
+
+# launch i3lock/xsecurelock
+#bindsym $mod+Shift+x exec --no-startup-id i3lock --force-clock --timecolor=ffffffff --datecolor=ffffffff --veriftext="..." --noinputtext="___" --wrongtext=" ! " --color=000000aa --blur=20 --pass-screen-keys --insidecolor=778899ff --insidevercolor=ccd6d7ff --ringcolor=cde0ecff --keyhlcolor=b7476fff
+bindsym $mod+Shift+x exec --no-startup-id xsecurelock
+
+# exit i3 (logs you out of your X session)
+bindsym $mod+Shift+e exec "i3-nagbar -t warning -m 'You pressed the exit shortcut. Do you really want to exit i3? This will end your X session.' -B 'Yes, exit i3' 'i3-msg exit'"
+
+#--------------------------------
+# Launch Programs
+#--------------------------------
+
+# launching specific browser using binding mode
+# press $mod+Shift+Return followed by 'b'/'c'/'f' to open brave/chrome/firefox
+# launch firefox(browser)
+bindsym $mod+Shift+Return mode "browser"
+mode "browser" {
+	# start browser
+	bindsym b exec brave
+	bindsym c exec chromium
+	bindsym f exec firefox
+
+	# back to default mode.
+	bindsym Escape mode "default"
+	bindsym $mod+Shift+Return mode "default"
+}
+
+# launch kitty(terminal)
+bindsym $mod+Return exec kitty
+
+# launch PcmanFM(file manager) 
+bindsym $mod+Shift+n exec pcmanfm
+
+# launch scrot(screenshot utility)
+bindsym --release Print exec --no-startup-id scrot --quality 100 --select --border '%d-%b-%Y-%T.png' -e 'mv $f ~/Pictures/'
+
+# launch galculator(calculator)
+bindsym XF86Calculator exec galculator
+
+# run day/night mode script
+bindsym $mod+Shift+m exec --no-startup-id /home/sol/Scripts/day-night-toggle.sh
+
+#--------------------------------
+# Mouse Shortcuts
+#--------------------------------
+
+# button1 = left mouse button
+# button2 = middle mouse button
+# button3 = right mouse button
+# button4 = scroll wheel up
+# button5 = scroll wheel down
+# button6 = scroll wheel right
+# button7 = scroll wheel left
+
+# move window to scratchpad
+bindsym --border --release button3 move scratchpad
+
+# toggle floating mode
+bindsym --border button2 floating toggle
