@@ -74,7 +74,7 @@ XX	Setup services
 	   - [Journal]
 	   - SystemMaxUse=30M
 24. Install GUI
-    1. # pacman -S xorg-server xf86-video-<[intel|amd]> xorg-xinit xorg-xev xorg-xinit i3-gaps i3status rofi udisks2 code xarchiver ttf-font-awesome ttf-fira-code ttf-fira-sans ttf-linux-libertine bdf-unifont unicode-character-database unicode-emoji unicode-cldr sxhkd seahorse gnome-keyring
+    1. # pacman -S xorg-server xf86-video-<[intel|amd]> xorg-xinit xorg-xev xorg-xinit i3-gaps i3status rofi udisks2 code xarchiver ttf-font-awesome ttf-fira-code ttf-fira-sans ttf-linux-libertine bdf-unifont unicode-character-database unicode-emoji unicode-cldr sxhkd seahorse gnome-keyring capitaine-cursors adapta-gtk-theme
 	2. Edit .xinitrc of the non-root user.
 	   - $ nvim .xinitrc
       - $ cp /etc/X11/xinit/xinitrc
