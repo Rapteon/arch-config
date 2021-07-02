@@ -34,7 +34,7 @@
     alternate-urgent-foreground: var(red);
     selected-normal-background:  var(lightbg);/**Changing the focused text color.**/
     darkerBlue:			 rgba(39, 56, 214, 100 %);
-    font:                        "CMU Typewriter Text Bold 14";
+    font:                        "Cousine Regular 14";
     whiteText:			 rgba(0, 0, 0, 100 %);
 }
 window {
@@ -56,7 +56,7 @@ message {
     border-color: var(separatorcolor);
     border:       2px dash 0px 0px ;
     width:        30%;
-    font:         "monospace bold 14";
+    font:         "Cousine Regular 14";
 }
 textbox {
     text-color: var(foreground);
