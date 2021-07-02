@@ -108,4 +108,3 @@ XX	Setup services
 35. Install and setup a firewall
 	sudo pacman -S firewalld
 	systemctl enable firewalld.service
-

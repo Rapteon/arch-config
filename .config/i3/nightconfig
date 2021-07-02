@@ -269,7 +269,7 @@ bar {
 assign [class="firefox"] $ws1
 assign [class="Brave-browser"] $ws1
 
-#Opens new terminal windows in $ws3
+Opens new terminal windows in $ws3
 assign [class="kitty"] $ws3
 
 #Opens file manager in $ws2
