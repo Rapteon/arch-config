@@ -15,7 +15,7 @@ set $mod Mod4
 
 # general colors
 set $window-focused-bg #B3DAF2
-set $window-focused-fg #F2F2F2
+set $window-focused-fg #00010d
 set $window-unfocused-bg #00010D
 set $window-unfocused-fg #45718C
 set $window-focused-inactive-bg #0D3140
@@ -269,7 +269,7 @@ bar {
 assign [class="firefox"] $ws1
 assign [class="Brave-browser"] $ws1
 
-Opens new terminal windows in $ws3
+#Opens new terminal windows in $ws3
 assign [class="kitty"] $ws3
 
 #Opens file manager in $ws2

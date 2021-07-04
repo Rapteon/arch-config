@@ -34,8 +34,8 @@ set $bar-active-workspace-bg #F2522E
 set $bar-active-workspace-fg #00010d
 set $bar-inactive-workspace-bg #1B1B1B
 set $bar-inactive-workspace-fg #F2F2F2
-set $bar-urgent-workspace-bg #E4EDF2
-set $bar-urgent-workspace-fg #1B1B1B
+set $bar-urgent-workspace-bg #2E4CA6
+set $bar-urgent-workspace-fg #F2F2F2
 set $bar-separator-color #F2522E
 
 # fonts
