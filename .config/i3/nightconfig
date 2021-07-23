@@ -336,6 +336,9 @@ exec --no-startup-id xset s 300 5
 # Start redshift
 exec --no-startup-id redshift -l 18.31:73.51
 
+# Start Optimus Manager. For hybrid graphics.
+exec --no-startup-id optimus-manager-qt
+
 #--------------------------------
 # Session Management
 #--------------------------------
