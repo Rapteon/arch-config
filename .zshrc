@@ -65,10 +65,19 @@ fi
 
 # Custom prompt
 PROMPT="%F{red}%#%f %* | %w
-%F{yellow}%~ %f"
+%F{yellow}%~ %f
+"
 
 # Starting gnome-keyring
 if [ -n "$DESKTOP_SESSION" ];then
     eval $(gnome-keyring-daemon --start)
     export SSH_AUTH_SOCK
 fi
+
+# Aliases
+alias ls="ls --color=always" # ls with colors
+alias vim=nvim # vim is now neovim
+
+# Adding custom folders to PATH
+export PATH=$PATH:~/Scripts/:~/.local/bin
+
