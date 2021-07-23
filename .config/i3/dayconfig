@@ -76,7 +76,7 @@ popup_during_fullscreen smart
 #--------------------------------
 
 # kill focused window
-bindsym $mod+q kill
+bindsym Ctrl+q kill
 
 # change focus
 bindsym $mod+h focus left
@@ -308,9 +308,6 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -n /usr/lib/xsecurelock/dimm
 # Start volumeicon
 exec --no-startup-id volumeicon
 
-# Start redshift
-exec --no-startup-id redshift -l 18.31:73.51
-
 # Starting NetworkManager applet
 exec --no-startup-id nm-applet
 
@@ -337,6 +334,9 @@ exec --no-startup-id xpad
 
 # Set timer for screensaver. xsecurelock is enabled in place of a screensaver.
 exec --no-startup-id xset s 300 5
+
+# Start redshift
+exec --no-startup-id redshift -l 18.31:73.51
 
 #--------------------------------
 # Session Management
