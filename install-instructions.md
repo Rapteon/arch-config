@@ -68,7 +68,11 @@
          - # visudo
 XX	Setup services
 	systemctl enable dhcpcd.service
-	systemctl 
+	systemctl start dhcpcd.service
+	 # Timer for periodically to allow pacman to discard periodically
+	# unused packages.
+	systemctl enable paccache.timer
+	systemctl start paccache.timer
 23. Set journal size
     1. Add the following to /etc/systemd/journald.conf.d/00-journal-size.conf. Create file and directory if missing.
 	   - [Journal]
