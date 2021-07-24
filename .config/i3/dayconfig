@@ -283,7 +283,7 @@ assign [class="vlc"] $ws6
 assign [class="code-oss"] $ws4
 
 #Open evince in $ws5
-assign [class="evince"] $ws5
+assign [class="Evince"] $ws5
 
 #--------------------------------
 # Startup Programs
