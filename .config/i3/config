@@ -76,7 +76,7 @@ popup_during_fullscreen smart
 #--------------------------------
 
 # kill focused window
-bindsym $mod+q kill
+bindsym Ctrl+q kill
 
 # change focus
 bindsym $mod+h focus left
@@ -282,6 +282,9 @@ assign [class="vlc"] $ws6
 #Open VSCode in $ws4
 assign [class="code-oss"] $ws4
 
+#Open evince in $ws5
+assign [class="Evince"] $ws5
+
 #--------------------------------
 # Startup Programs
 #--------------------------------
@@ -307,9 +310,6 @@ exec --no-startup-id xss-lock --transfer-sleep-lock -n /usr/lib/xsecurelock/dimm
 
 # Start volumeicon
 exec --no-startup-id volumeicon
-
-# Start redshift
-exec --no-startup-id redshift -l 18.31:73.51
 
 # Starting NetworkManager applet
 exec --no-startup-id nm-applet
@@ -337,6 +337,12 @@ exec --no-startup-id xpad
 
 # Set timer for screensaver. xsecurelock is enabled in place of a screensaver.
 exec --no-startup-id xset s 300 5
+
+# Start redshift
+exec --no-startup-id redshift -l 18.31:73.51
+
+# Start Optimus Manager. For hybrid graphics.
+exec --no-startup-id optimus-manager-qt
 
 #--------------------------------
 # Session Management
