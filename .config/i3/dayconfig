@@ -285,6 +285,9 @@ assign [class="code-oss"] $ws4
 #Open evince in $ws5
 assign [class="Evince"] $ws5
 
+#Opens xpad in floating mode
+assign [class="xpad"] floating enable
+
 #--------------------------------
 # Startup Programs
 #--------------------------------
@@ -319,11 +322,11 @@ exec --no-startup-id nm-applet
 bindsym $mod+space mode "search"
 mode "search" {
 	bindsym a exec --no-startup-id rofi -modi "drun" -show "drun" -show-icons -no-normal-window
-	bindsym f exec --no-startup-id rofi -modi "file-browser" -show "file-browser" -show-icons -no-normal-window
+	bindsym f exec --no-startup-id rofi -modi "filebrowser" -show "filebrowser" -show-icons -no-normal-window
 	bindsym r exec --no-startup-id rofi -modi "run" -show "run" -show-icons -no-normal-window
 	bindsym Escape mode "default"
 	bindsym Return mode "default"
-        bindsym $mod+space mode "default"
+	bindsym $mod+space mode "default"
 }
 
 # Setting wallpaper using feh
